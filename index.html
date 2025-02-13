@@ -10,36 +10,51 @@
 <body>
   <header>
     <div class="banner">
-      <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner">
+      <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner" class="hero-image">
     </div>
     <nav>
-      <ul>
-        <li><a href="https://katie-bucks.xyz">Home</a></li>
-        <li><a href="https://katie-bucks.onion">Dark Web Mirror</a></li>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="privacyguide.html">Privacy Guide</a></li>
-        <li><a href="https://bsky.app/profile/katie">Bluesky</a></li>
-        <li><a href="https://github.com/katie">GitHub</a></li>
+        <li><a href="underground.html">Underground Archive</a></li>
+        <li><a href="psychedelic.html">Psychedelic Training</a></li>
+        <li><a href="propaganda.html">Propaganda Generator</a></li>
+        <li><a href="message_board.html">Encrypted Board</a></li>
+        <li><a href="oracle.html">Esoteric Oracle</a></li>
       </ul>
-    <li><a href="underground.html">Underground Archive</a></li>
-    <li><a href="psychedelic.html">Psychedelic Training</a></li>
-    <li><a href="propaganda.html">Propaganda Generator</a></li>
-    <li><a href="message_board.html">Encrypted Board</a></li>
-    <li><a href="oracle.html">Esoteric Oracle</a></li>
     </nav>
   </header>
   <main>
     <section class="intro">
-      <h1>Welcome to Katie Bucks the Invisible FUCKS!</h1>
-      <p>Unfiltered, raw, and real—this is where bold truths meet modern conversations. Dive into the latest episodes of the video podcast or read unapologetic posts below.</p>
+      <h1 class="hero-text">Welcome to Katie Bucks the Invisible FUCKS!</h1>
+      <p class="subtext">Unfiltered, raw, and real—bold truths, psychedelic wisdom, and anti-prophecy revelations.</p>
     </section>
     <section class="posts">
-      <article>
-        <h2>Latest Post</h2>
-        <p>Coming soon...</p>
-      </article>
+      <h2 class="section-title">Latest Posts</h2>
+      <div id="post-container">
+        <!-- Blog posts will be dynamically loaded here -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            fetch("/blog-posts/")
+              .then(response => response.json())
+              .then(posts => {
+                const container = document.getElementById("post-container");
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
+                posts.forEach(post => {
+                  let postElement = document.createElement("object");
+                  postElement.setAttribute("type", "text/html");
+                  postElement.setAttribute("data", `/blog-posts/${post.filename}`);
+                  postElement.classList.add("post-embed");
+                  container.appendChild(postElement);
+                });
+              })
+              .catch(error => console.error("Error loading posts:", error));
+          });
+        </script>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Katie Bucks. All rights reserved.</p>
   </footer>
 </body>

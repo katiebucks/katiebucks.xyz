@@ -51,9 +51,11 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
   padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .nav-links li {

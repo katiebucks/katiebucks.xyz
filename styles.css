@@ -169,3 +169,29 @@ video {
 .footer p {
   color: #fff;
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero-text {
+    font-size: 28px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+}

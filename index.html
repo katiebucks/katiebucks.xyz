@@ -24,7 +24,7 @@
       </ul>
     </nav>
   </header>
-  
+
   <div class="content-container">
     <aside class="left-panel">
       <h2>Site Navigation</h2>
@@ -43,54 +43,15 @@
       </section>
       <section class="posts">
         <h2 class="section-title">Latest Posts</h2>
-        <div id="post-container">
-          <!-- Blog posts will be dynamically loaded here -->
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              fetch("/blog-list.json")
-                .then(response => response.json())
-                .then(posts => {
-                  const container = document.getElementById("post-container");
-                  posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
-                  posts.forEach(post => {
-                    let postElement = document.createElement("object");
-                    postElement.setAttribute("type", "text/html");
-                    postElement.setAttribute("data", `/blog-posts/${post.filename}`);
-                    postElement.classList.add("post-embed");
-                    container.appendChild(postElement);
-                  });
-                })
-                .catch(error => console.error("Error loading posts:", error));
-            });
-          </script>
-        </div>
+        <p>New blog posts coming soon.</p>
       </section>
     </main>
 
     <aside class="right-panel">
       <h2>Post Navigation</h2>
-      <ul id="post-nav-list"></ul>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          fetch("/blog-list.json")
-            .then(response => response.json())
-            .then(posts => {
-              const navList = document.getElementById("post-nav-list");
-              posts.forEach((post, index) => {
-                let listItem = document.createElement("li");
-                let link = document.createElement("a");
-                link.href = `/blog-posts/${post.filename}`;
-                link.textContent = post.title;
-                listItem.appendChild(link);
-                
-                let gradientFactor = (index / posts.length) * 100;
-                listItem.style.color = `hsl(330, 100%, ${90 - gradientFactor}%)`; // Gradient effect
-                navList.appendChild(listItem);
-              });
-            })
-            .catch(error => console.error("Error loading post navigation:", error));
-        });
-      </script>
+      <ul>
+        <li>New posts will be listed here.</li>
+      </ul>
     </aside>
   </div>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Katie Bucks the Invisible FUCKS! - A video podcast about raw, unapologetic truths.">
+  <meta name="description" content="Katie Bucks the Invisible FUCKS!">
   <link rel="stylesheet" href="styles.css">
   <title>Katie Bucks the Invisible FUCKS!</title>
 </head>
@@ -22,19 +22,18 @@
   <main>
     <section class="intro">
       <h1 class="hero-text">Katie Bucks the Invisible FUCKS!</h1>
-      <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool!</p>
+      <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool! 👻</p>
     </section>
     <section class="posts">
       <h2 class="section-title">Latest Posts</h2>
       <div id="post-container">
-        <!-- Blog posts will be dynamically loaded here -->
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             fetch("blog-list.json")
               .then(response => response.json())
               .then(posts => {
                 const container = document.getElementById("post-container");
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
                 posts.forEach(post => {
                   let postElement = document.createElement("object");
                   postElement.setAttribute("type", "text/html");
@@ -49,8 +48,8 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
+  <footer class="footer" style="background: url('katiebucks_logo.png') no-repeat center; background-size: contain;">
+    <p>&copy; 2025 Katie Bucks. All rights reserved.</p>
   </footer>
 </body>
 </html>

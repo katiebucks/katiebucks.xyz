@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Katie Bucks the Invisible FUCKS! - A video podcast about raw, unapologetic truths.">
+  <meta name="description" content="Katie Bucks the Invisible FUCKS!">
   <link rel="stylesheet" href="styles.css">
   <title>Katie Bucks the Invisible FUCKS!</title>
 </head>
 <body>
   <header>
     <div class="banner">
-      <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS! Banner" class="hero-image">
+      <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner" class="hero-image">
     </div>
-katiebucks.onion
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -25,18 +24,37 @@ katiebucks.onion
   </header>
   <main>
     <section class="intro">
-      <h1>Welcome to Katie Bucks the Invisible FUCKS!</h1>
-      <p>Unfiltered, raw, and real—this is where bold truths meet modern conversations.</p>
-      <img src="462094877_122100793106554120_6308720409890622400_n.jpg" alt="Podcast Artwork" class="featured-image">
+      <h1 class="hero-text">Katie Bucks the Invisible FUCKS!</h1>
+      <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool!</p>
     </section>
     <section class="posts">
-      <article>
-        <h2>Latest Post</h2>
-        <p>Coming soon...</p>
-      </article>
+      <h2 class="section-title">Latest Posts</h2>
+      <div id="post-container">
+        <!-- Blog posts will be dynamically loaded here -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            fetch("blog-list.json")
+              .then(response => response.json())
+              .then(posts => {
+                const container = document.getElementById("post-container");
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
+                posts.forEach(post => {
+                  let postElement = document.createElement("article");
+                  postElement.classList.add("post");
+                  postElement.innerHTML = `
+                    <h2><a href="blog-posts/${post.filename}">${post.title}</a></h2>
+                    <p class="date">${post.date}</p>
+                  `;
+                  container.appendChild(postElement);
+                });
+              })
+              .catch(error => console.error("Error loading posts:", error));
+          });
+        </script>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
   </footer>
 </body>

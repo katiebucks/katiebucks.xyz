@@ -15,17 +15,14 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
         <li><a href="privacyguide.html">Privacy Guide</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="PGP.html">PGP</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="intro">
       <h1 class="hero-text">Katie Bucks the Invisible FUCKS!</h1>
-      <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool!</p>
+      <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool! 👻</p>
     </section>
     <section class="posts">
       <h2 class="section-title">Latest Posts</h2>
@@ -39,12 +36,10 @@
                 const container = document.getElementById("post-container");
                 posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
                 posts.forEach(post => {
-                  let postElement = document.createElement("article");
-                  postElement.classList.add("post");
-                  postElement.innerHTML = `
-                    <h2><a href="blog-posts/${post.filename}">${post.title}</a></h2>
-                    <p class="date">${post.date}</p>
-                  `;
+                  let postElement = document.createElement("object");
+                  postElement.setAttribute("type", "text/html");
+                  postElement.setAttribute("data", `blog-posts/${post.filename}`);
+                  postElement.classList.add("post-embed");
                   container.appendChild(postElement);
                 });
               })

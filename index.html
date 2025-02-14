@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Katie Bucks the Invisible FUCKS! - A video podcast about raw, unapologetic truths.">
-  <link rel="tylesheetesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Katie Bucks the Invisible FUCKS!</title>
 </head>
 <body>
@@ -16,8 +16,11 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="privacyguide.html">Privacy Guide</a></li>
-        <li><a href="PGP.html">PGP Key</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="underground.html">Underground Archive</a></li>
+        <li><a href="psychedelic.html">Psychedelic Training</a></li>
+        <li><a href="propaganda.html">Propaganda Generator</a></li>
+        <li><a href="message_board.html">Encrypted Board</a></li>
+        <li><a href="oracle.html">Esoteric Oracle</a></li>
       </ul>
     </nav>
   </header>
@@ -29,13 +32,14 @@
     <section class="posts">
       <h2 class="section-title">Latest Posts</h2>
       <div id="post-container">
+        <!-- Blog posts will be dynamically loaded here -->
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             fetch("blog-list.json")
               .then(response => response.json())
               .then(posts => {
                 const container = document.getElementById("post-container");
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
                 posts.forEach(post => {
                   let postElement = document.createElement("object");
                   postElement.setAttribute("type", "text/html");
@@ -51,7 +55,7 @@
     </section>
   </main>
   <footer class="footer">
-    <p>&copy; 2025 Katie Bucks. All rights reserved.</p>
+    <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
   </footer>
 </body>
 </html>

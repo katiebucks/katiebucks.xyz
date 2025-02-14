@@ -34,7 +34,7 @@
               .then(response => response.json())
               .then(posts => {
                 const container = document.getElementById("post-container");
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
                 posts.forEach(post => {
                   let postElement = document.createElement("object");
                   postElement.setAttribute("type", "text/html");

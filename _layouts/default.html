@@ -1,3 +1,4 @@
+<!-- Updated default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,36 +10,13 @@
 </head>
 <body>
 
-    <header>
-        <div class="banner">
-            <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS!">
-        </div>
-        <nav class="nav-container">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="privacyguide.html">Privacy Guide</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mirrors">
-            <h3>Mirrors</h3>
-            <p><a href="http://katiebucks.onion">katiebucks.onion</a></p>
-            <p><a href="PGP.html">PGP</a></p>
-        </div>
-    </header>
+    {% include header.html %}
 
     <main>
         {{ content }}
     </main>
 
-    <footer class="footer">
-        <div class="footer-watermark-container">
-            <img src="katiebucks_logo.png" alt="Katie Bucks Logo" class="footer-watermark">
-        </div>
-        <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
-        <p><a href="TOS.html">Terms of Service</a> | <a href="privacy_policy.html">Privacy Policy</a></p>
-    </footer>
+    {% include footer.html %}
 
 </body>
 </html>

@@ -162,8 +162,8 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
-  height: calc(1.2em + 10px); /* Just slightly larger than text */
-  opacity: 0.5;
+  height: 256px;
+  opacity: 0.8;
   z-index: 0;
 }
 

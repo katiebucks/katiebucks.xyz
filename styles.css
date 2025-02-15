@@ -133,6 +133,10 @@ nav {
   display: inline-block;
 }
 
+.banner-title span {
+  display: inline-block;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
@@ -160,7 +164,7 @@ nav {
   .banner-title {
     font-size: 2rem;
     padding: 5px 15px;
-    white-space: normal;
+    white-space: nowrap;
   }
 }
 

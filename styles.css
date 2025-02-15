@@ -232,8 +232,8 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 128px; /* Adjust for size */
-    height: 128px;
+    width: 100px; /* Adjust for size */
+    height: 100px;
     background-image: url('katiebucks_logo.png');
     background-size: contain;
     background-repeat: no-repeat;

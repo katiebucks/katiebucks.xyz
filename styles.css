@@ -211,3 +211,27 @@ nav {
     display: block;
     margin: 0 auto; /* Centers the image */
 }
+
+.footer {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.8); /* Ensures readability */
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px; /* Adjust watermark size */
+    height: 80px; /* Adjust watermark size */
+    background-image: url('katiebucks_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; /* Adjust transparency */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ensures no interaction issues */
+}

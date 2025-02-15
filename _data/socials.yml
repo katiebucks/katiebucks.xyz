@@ -1,0 +1,15 @@
+- name: Twitter
+  url: "https://twitter.com/yourhandle"
+  icon: "social_twitter.png"
+
+- name: Facebook
+  url: "https://facebook.com/yourprofile"
+  icon: "social_facebook.png"
+
+- name: Instagram
+  url: "https://instagram.com/yourhandle"
+  icon: "social_instagram.png"
+
+- name: LinkedIn
+  url: "https://linkedin.com/in/yourhandle"
+  icon: "social_linkedin.png"

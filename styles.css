@@ -232,12 +232,13 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 128px; /* Adjust for size */
-    background-image: url('banner_midtier.png');
+    width: 80px; /* Adjust for size */
+    height: 80px;
+    background-image: url('katiebucks_logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.8; /* Increase brightness */
+    opacity: 0.4; /* Increase brightness */
     transform: translate(-50%, -50%);
     z-index: 0; /* Keeps it behind text */
     pointer-events: none;

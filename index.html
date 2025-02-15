@@ -1,14 +1,34 @@
-
 ---
-
-layout: default title: "Katie Bucks the Invisible FUCKS!" description: "Spitting facts and rewriting rules | Get schooled, fool! 👻"
+layout: default
+title: "Katie Bucks the Invisible FUCKS!"
+description: "Spitting facts and rewriting rules | Get schooled, fool! 👻"
+---
 
 <section class="intro">
     <h1 class="hero-text">Katie Bucks the Invisible FUCKS!</h1>
     <p class="subtext">Spitting facts and rewriting rules | Get schooled, fool! 👻</p>
-</section><section class="posts">
+</section>
+
+<section class="posts">
     <h2 class="section-title">Latest Posts</h2>
     <div id="post-container">
-        {% include blog-list.html %}
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("blog-list.json")
+                .then(response => response.json())
+                .then(posts => {
+                    const container = document.getElementById("post-container");
+                    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    posts.forEach(post => {
+                        let postElement = document.createElement("object");
+                        postElement.setAttribute("type", "text/html");
+                        postElement.setAttribute("data", `blog-posts/${post.filename}`);
+                        postElement.classList.add("post-embed");
+                        container.appendChild(postElement);
+                    });
+                })
+                .catch(error => console.error("Error loading posts:", error));
+            });
+        </script>
     </div>
 </section>

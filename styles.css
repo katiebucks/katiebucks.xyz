@@ -243,3 +243,20 @@ nav {
     position: relative;
     z-index: 1;
 }
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px; /* Adjust for size */
+    height: 100px;
+    background-image: url('katiebucks_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Increase brightness */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Keeps it behind text */
+    pointer-events: none;
+}

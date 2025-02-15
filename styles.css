@@ -195,3 +195,10 @@ nav {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     min-height: 80px; /* Ensure consistent height */
 }
+
+.page-header {
+    background: linear-gradient(to right, #FF69B4, #89CFF0);
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}

@@ -13,8 +13,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0;
-  margin: 0;
   line-height: 1.8;
 }
 
@@ -27,22 +25,18 @@ header {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Dynamic Image Scaling */
-.hero-image,
-.section-image,
-.profile-image,
-.footer-watermark {
+.hero-image, .section-image, .profile-image, .footer-watermark {
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
   margin: 20px auto;
   border-radius: 15px;
-  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.5);
-  loading: lazy;
+  box-shadow: 0 5px 20px rgba(255, 105, 180, 0.5);
 }
 
 /* Bullet Point Icon */
@@ -59,7 +53,7 @@ nav {
   width: 100%;
   padding: 15px 0;
   border-bottom: 4px solid #FF69B4;
-  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
 }
 
 .nav-links {
@@ -68,13 +62,11 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-links li {
-  display: inline;
   margin: 5px;
 }
 
@@ -100,34 +92,30 @@ nav {
     padding: 30px 0;
     font-size: 20px;
   }
-  
   .hero-text {
     font-size: 28px;
   }
-  
   .subtext {
     font-size: 16px;
   }
-  
   .section-title {
     font-size: 24px;
   }
-  
   .nav-links {
     flex-direction: column;
     gap: 10px;
     text-align: center;
   }
-  
   main {
     width: 90%;
     padding: 20px;
   }
 }
 
+/* Banner */
 .banner {
   width: 100%;
-  max-width: 1200px; /* Adjust this based on the ideal content width */
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -136,146 +124,103 @@ nav {
 
 .banner img {
   width: 100%;
-  max-width: 1300px; /* Slightly wider than the content */
+  max-width: 1300px;
   height: auto;
   object-fit: cover;
 }
 
+/* PGP Key Container */
 .pgp-container {
-    max-width: 800px; /* Ensures central alignment */
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
 }
 
 .pgp-container img {
-    max-width: 100%; /* Prevents image overflow */
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.5);
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(255, 105, 180, 0.5);
 }
 
 .pgp-key pre {
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    white-space: pre-wrap; /* Ensures word wrapping */
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%; /* Prevents overflow */
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 100%;
 }
 
+/* Pagination */
 .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .pagination a {
-    background: #FF69B4;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+  background: #FF69B4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .pagination a:hover {
-    background: #89CFF0;
+  background: #89CFF0;
 }
 
+/* Section Titles */
 .section-title {
-    background: linear-gradient(to right, #FF69B4, #89CFF0);
-    width: 100%;
-    padding: 40px 0; /* Increase this value if necessary */
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    min-height: 80px; /* Ensure consistent height */
+  background: linear-gradient(to right, #FF69B4, #89CFF0);
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
 }
 
-.page-header {
-    background: linear-gradient(to right, #FF69B4, #89CFF0);
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
 }
 
 .footer-watermark {
-    width: 128px; /* Adjust size as needed */
-    height: auto;
-    opacity: 0.5; /* Makes it more of a watermark */
-    position: relative;
-    display: block;
-    margin: 0 auto; /* Centers the image */
+  width: 50px;
+  height: auto;
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
 }
 
-.footer {
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.8); /* Ensures readability */
-    overflow: hidden; /* Prevents clipping */
-}
-
-/* Ensure text is above the background image */
-.footer p {
-    position: relative;
-    z-index: 1;
-}
-
-/*
 .footer::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px; /* Adjust for size */
-    height: 80px;
-    background-image: url('banner_midtier.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.4; /* Increase brightness */
-    transform: translate(-50%, -50%);
-    z-index: 0; /* Keeps it behind text */
-    pointer-events: none;
-}
-*/
-
-.page-banner {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.page-banner img {
-    width: 100%;
-    max-width: 1300px;
-    height: auto;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-
-.banner-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-    .banner-title {
-        font-size: 2rem;
-    }
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url('katiebucks_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
 }

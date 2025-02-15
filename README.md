@@ -1,5 +1,4 @@
-Katie Bucks the Invisible FUCKS!
-Visit us:
+Visit:
 https://katiebucks.github.io/abc.katiebucks.xyz
 
 Coming soon:

@@ -233,7 +233,6 @@ nav {
     top: 50%;
     left: 50%;
     width: 80px; /* Adjust for size */
-    height: 80px;
     background-image: url('banner_midtier.png');
     background-size: contain;
     background-repeat: no-repeat;

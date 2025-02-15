@@ -233,3 +233,7 @@ nav {
   display: block;
   margin: 0 auto;
 }
+
+.section-title {
+    white-space: nowrap; /* Prevents line breaks */
+}

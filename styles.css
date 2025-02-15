@@ -183,3 +183,7 @@ nav {
 .pagination a:hover {
     background: #89CFF0;
 }
+
+.section-title {
+  background: linear-gradient(to right, #FF69B4, #89CFF0);
+}

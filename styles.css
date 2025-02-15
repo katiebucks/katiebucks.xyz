@@ -197,3 +197,45 @@ nav {
     white-space: nowrap;
   }
 }
+
+/* ===== Mobile Swipe Navigation ===== */
+.nav-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100vw;
+  height: 60px; /* Adjust based on your design */
+  background: #222;
+  border-bottom: 4px solid #FF69B4;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.nav-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.nav-item {
+  flex: 0 0 100vw; /* Each item takes up the full screen width */
+  scroll-snap-align: start;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #89CFF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
+
+.nav-item a {
+  color: #89CFF0;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav-item a:hover {
+  color: #FF69B4;
+}

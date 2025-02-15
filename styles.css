@@ -202,3 +202,12 @@ nav {
     padding: 50px 0;
     text-align: center;
 }
+
+.footer-watermark {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0.5; /* Makes it more of a watermark */
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}

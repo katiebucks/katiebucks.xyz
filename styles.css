@@ -208,7 +208,7 @@ nav {
   margin: 0 auto;
 }
 
-.footer::before {
+/*.footer::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -223,4 +223,4 @@ nav {
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
-}
+}*/

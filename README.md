@@ -1,5 +1,6 @@
-For now, view on:
+Katie Bucks the Invisible FUCKS!
+Visit us:
 https://katiebucks.github.io/abc.katiebucks.xyz
 
-Soon, view on:
+Coming soon:
 https://abc.katiebucks.xyz/

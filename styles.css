@@ -204,7 +204,7 @@ nav {
 }
 
 .footer-watermark {
-    width: 50px; /* Adjust size as needed */
+    width: 128px; /* Adjust size as needed */
     height: auto;
     opacity: 0.5; /* Makes it more of a watermark */
     position: relative;

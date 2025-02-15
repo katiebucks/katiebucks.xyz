@@ -1,10 +1,7 @@
 
 ---
-layout: default
-title: "Katie Bucks the Invisible FUCKS!"
-description: "Get schooled, fool! 👻"
-paginate: 20
----
+
+layout: default title: "Katie Bucks the Invisible FUCKS!" description: "Get schooled, fool! 👻" paginate: 20
 
 <nav>
     <ul class="nav-links">
@@ -14,13 +11,9 @@ paginate: 20
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
-</nav>
-
-<section class="page-header">
+</nav><section class="page-header">
     <h1 class="section-title">Katie Bucks the Invisible FUCKS!</h1>
-</section>
-
-<section class="posts">
+</section><section class="posts">
     <h2 class="section-title">Latest Posts</h2>
     {% for post in paginator.posts %}
         <section class='blog-preview'>
@@ -29,18 +22,14 @@ paginate: 20
             <p>{{ post.content | strip_html | truncate: 200 }}</p>
         </section>
     {% endfor %}
-</section>
-
-<div class="pagination">
+</section><div class="pagination">
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="next">Next</a>
     {% endif %}
-</div>
-
-<style>
+</div><style>
 /* General Reset */
 * {
   margin: 0;

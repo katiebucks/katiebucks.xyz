@@ -232,12 +232,12 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80px; /* Adjust for size */
+    width: 128px; /* Adjust for size */
     background-image: url('banner_midtier.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4; /* Increase brightness */
+    opacity: 0.6; /* Increase brightness */
     transform: translate(-50%, -50%);
     z-index: 0; /* Keeps it behind text */
     pointer-events: none;

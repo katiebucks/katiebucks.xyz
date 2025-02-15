@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PGP Public Key for Katie Bucks">
-  <link rel="stylesheet" href="styles.css">
-  <title>PGP Public Key</title>
-</head>
-<body>
-  <header>
+
+---
+
+layout: default title: "PGP Public Key" description: "PGP Public Key for Katie Bucks"
+
+<header>
     <div class="banner">
-      <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner">
+        <img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner">
     </div>
     <h1>PGP Public Key</h1>
-  </header>
-  <main>
+</header><main>
     <section class="intro">
-      <img src="Levîadjinn_headshot.png" alt="Levîadjinn Headshot" class="profile-image">
-      <p>This is Katie Bucks' PGP public key. Use it to encrypt messages securely.</p>
-    </section>
-    <section class="pgp-key">
-      <h2>Public Key</h2>
-      <pre>
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v1
+        <img src="{{ site.baseurl }}/assets/images/Levîadjinn_headshot.png" alt="Levîadjinn Headshot" class="profile-image">
+        <p>This is Katie Bucks' PGP public key. Use it to encrypt messages securely.</p>
+    </section><section class="pgp-key">
+    <h2>Public Key</h2>
+    <pre>
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v1
+    
+    mQINBFbb6+4BEACrXNooBdo9vqD7GV9jqF2XmPRgV1ebShmhzG7gX/vcGGrVvhF0Z7U+L7OPGgJH
+    ...
+    (Insert full key here)
+    ...
+    -----END PGP PUBLIC KEY BLOCK-----
+    </pre>
+</section>
 
-mQINBFbb6+4BEACrXNooBdo9vqD7GV9jqF2XmPRgV1ebShmhzG7gX/vcGGrVvhF0Z7U+L7OPGgJH
-...
-(Insert full key here)
-...
------END PGP PUBLIC KEY BLOCK-----
-      </pre>
-    </section>
-  </main>
-  <footer>
-    <img src="katiebucks_logo.png" alt="Katie Bucks Logo" class="footer-logo">
-    <p>&copy; 2025 Katie Bucks. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+</main><footer>
+    <img src="{{ site.baseurl }}/assets/images/katiebucks_logo.png" alt="Katie Bucks Logo" class="footer-logo">
+    <p>&copy; {{ site.time | date: '%Y' }} Katie Bucks. All rights reserved.</p>
+</footer>

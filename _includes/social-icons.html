@@ -1,0 +1,7 @@
+<div class="social-icons">
+    {% for social in site.data.socials %}
+        <a href="{{ social.url }}" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/{{ social.icon }}" alt="{{ social.name }}">
+        </a>
+    {% endfor %}
+</div>

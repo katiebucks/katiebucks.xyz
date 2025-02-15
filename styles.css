@@ -29,7 +29,7 @@ header {
 }
 
 /* Dynamic Image Scaling */
-.hero-image, .section-image, .profile-image, .footer-watermark {
+.hero-image, .section-image, .profile-image {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -137,6 +137,32 @@ nav {
   display: inline-block;
 }
 
+/* Footer */
+.footer {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-watermark {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: auto;
+  height: calc(1.2em + 10px); /* Just slightly larger than text */
+  opacity: 0.5;
+  z-index: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
@@ -166,26 +192,4 @@ nav {
     padding: 5px 15px;
     white-space: nowrap;
   }
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
-}
-
-.footer p {
-  position: relative;
-  z-index: 1;
-}
-
-.footer-watermark {
-  width: 50px;
-  height: auto;
-  opacity: 0.5;
-  display: block;
-  margin: 0 auto;
 }

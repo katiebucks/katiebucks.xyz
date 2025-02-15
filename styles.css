@@ -29,21 +29,6 @@ header {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== Banner Styling ===== */
-.banner {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 /* ===== Dynamic Image Scaling ===== */
 .hero-image,
 .section-image,
@@ -141,8 +126,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-image: url('banner_midtier.png');
   background-size: contain;
   background-repeat: no-repeat;

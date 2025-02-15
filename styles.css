@@ -124,3 +124,19 @@ nav {
     padding: 20px;
   }
 }
+
+.banner {
+  width: 100%;
+  max-width: 1200px; /* Adjust this based on the ideal content width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 1300px; /* Slightly wider than the content */
+  height: auto;
+  object-fit: cover;
+}

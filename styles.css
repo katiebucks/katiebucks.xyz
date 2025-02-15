@@ -21,12 +21,29 @@ body {
 header {
   background: linear-gradient(90deg, #FF69B4, #89CFF0);
   width: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Banner Styling ===== */
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ===== Dynamic Image Scaling ===== */
@@ -34,7 +51,7 @@ header {
 .section-image,
 .profile-image {
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   height: auto;
   display: block;
   margin: 20px auto;
@@ -46,39 +63,28 @@ header {
 /* ===== Navigation - Swipe for Mobile ===== */
 .nav-container {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
   height: 60px;
   background: #222;
   border-bottom: 4px solid #FF69B4;
-  white-space: nowrap;
-  scrollbar-width: none;
-}
-
-.nav-container::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-item {
-  flex: 0 0 100vw;
-  scroll-snap-align: start;
+  flex: 1;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: #89CFF0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #222;
+  padding: 15px;
 }
 
 .nav-item a {
   color: #89CFF0;
   text-decoration: none;
-  padding: 20px;
   transition: color 0.3s ease;
 }
 
@@ -90,19 +96,19 @@ header {
 .section-title {
   background: linear-gradient(to right, #FF69B4, #89CFF0);
   width: 100%;
-  padding: 40px 0;
+  max-width: 800px;
+  padding: 35px 0;
   text-align: center;
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  min-height: 80px;
 }
 
 .page-header {
   background: linear-gradient(to right, #FF69B4, #89CFF0);
   width: 100%;
-  padding: 50px 0;
+  padding: 45px 0;
   text-align: center;
 }
 
@@ -110,15 +116,18 @@ header {
 .footer {
   position: relative;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
+  max-width: 800px;
+  margin: auto;
 }
 
 .footer p {
   position: relative;
   z-index: 1;
+  font-size: 14px;
 }
 
 .footer::before {
@@ -126,8 +135,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-image: url('banner_midtier.png');
   background-size: contain;
   background-repeat: no-repeat;

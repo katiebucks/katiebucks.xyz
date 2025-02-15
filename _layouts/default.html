@@ -11,15 +11,14 @@
 
     <header>
         <div class="banner">
-            <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS Banner">
+            <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS!">
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="privacyguide.html">Privacy Guide</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="nav-container">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="privacyguide.html">Privacy Guide</a></div>
+            <div class="nav-item"><a href="blog.html">Blog</a></div>
+            <div class="nav-item"><a href="contact.html">Contact</a></div>
+            <div class="nav-title">{{ page.title }}</div>
         </nav>
     </header>
 
@@ -27,7 +26,7 @@
         {{ content }}
     </main>
 
-    <footer class="footer">
+    <footer>
         <img src="katiebucks_logo.png" alt="Katie Bucks Logo" class="footer-logo">
         <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
     </footer>

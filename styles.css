@@ -145,6 +145,10 @@ nav {
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer p {
@@ -154,9 +158,9 @@ nav {
 
 .footer-watermark {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   width: auto;
   height: calc(1.2em + 10px); /* Just slightly larger than text */
   opacity: 0.5;

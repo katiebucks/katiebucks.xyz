@@ -242,3 +242,31 @@ nav {
     z-index: 0; /* Keeps it behind text */
     pointer-events: none;
 }
+
+.page-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-banner img {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}

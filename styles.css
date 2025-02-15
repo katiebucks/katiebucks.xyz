@@ -1,4 +1,4 @@
-/* ===== Global Reset & Basics ===== */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,136 +13,126 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
   line-height: 1.8;
-  overflow-x: hidden; /* Prevents unnecessary horizontal scrolling */
 }
 
-/* ===== Header & Page Title ===== */
+/* Header */
 header {
   background: linear-gradient(90deg, #FF69B4, #89CFF0);
   width: 100%;
-  padding: 40px 0;
+  padding: 30px 0;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== Banner Styling ===== */
-.banner {
+/* Navigation */
+nav {
+  background: #222;
   width: 100%;
-  max-width: 1200px;
-  height: auto;
+  padding: 15px 0;
+  border-bottom: 4px solid #FF69B4;
+  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
   margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 5px;
+}
+
+.nav-links a {
+  color: #89CFF0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 105, 180, 0.2);
+  color: #FF69B4;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner img {
   width: 100%;
+  max-width: 1100px;
   height: auto;
-  object-fit: contain;
-}
-
-/* ===== Dynamic Image Scaling ===== */
-.hero-image,
-.section-image,
-.profile-image {
-  width: 100%;
-  max-width: 750px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
+  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
-  loading: lazy;
+  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.5);
 }
 
-/* ===== Navigation - Swipe for Mobile ===== */
-.nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  height: 60px;
-  background: #222;
-  border-bottom: 4px solid #FF69B4;
-}
-
-.nav-item {
-  flex: 1;
-  text-align: center;
-  font-size: 18px;
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #89CFF0;
-  padding: 15px;
+  color: white;
+  background: linear-gradient(90deg, #FF69B4, #89CFF0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nav-item a {
-  color: #89CFF0;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 25px rgba(255, 105, 180, 0.7);
 }
 
-.nav-item a:hover {
-  color: #FF69B4;
-}
-
-/* ===== Section Titles & Text Formatting ===== */
-.section-title {
-  background: linear-gradient(to right, #FF69B4, #89CFF0);
-  width: 100%;
-  max-width: 800px;
-  padding: 35px 0;
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.page-header {
-  background: linear-gradient(to right, #FF69B4, #89CFF0);
-  width: 100%;
-  padding: 45px 0;
-  text-align: center;
-}
-
-/* ===== Footer & Branding ===== */
+/* Footer */
 .footer {
   position: relative;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  max-width: 800px;
-  margin: auto;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  opacity: 0.5;
+  margin: 0 auto;
+  display: block;
 }
 
 .footer p {
   position: relative;
   z-index: 1;
-  font-size: 14px;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background-image: url('banner_midtier.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.4;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  pointer-events: none;
 }

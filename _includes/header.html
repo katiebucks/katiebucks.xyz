@@ -1,14 +1,45 @@
-<header>
+<header class="banner-header">
     <div class="banner">
-        <img src="banner.jpg" alt="Katie Bucks the Invisible FUCKS! Banner">
+        <img src="banner.jpg" alt="Page Banner">
+        <h1 class="page-title">{{ page.title }}</h1>
     </div>
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
- <li><a href="contact.html">Contact</a></li>
             <li><a href="privacyguide.html">Privacy Guide</a></li>
             <li><a href="PGP.html">PGP</a></li>
         </ul>
     </nav>
 </header>
+
+<style>
+.banner-header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+</style>

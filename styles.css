@@ -107,6 +107,12 @@ nav {
   filter: brightness(60%); /* Darkens the image for better contrast */
 }
 
+.page-header {
+    width: auto; /* Ensures it takes as much space as needed */
+    min-width: 300px; /* Adjust if necessary */
+    display: inline-block;
+}
+
 /* Embossed Title Over Banner */
 .banner-title {
   position: absolute;
@@ -122,6 +128,9 @@ nav {
   border-radius: 10px;
   text-align: center;
   white-space: nowrap;
+    width: auto; /* Ensures it takes as much space as needed */
+    min-width: 300px; /* Adjust if necessary */
+    display: inline-block;
 }
 
 /* Responsive Design */

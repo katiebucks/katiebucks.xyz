@@ -227,6 +227,7 @@ nav {
     z-index: 1;
 }
 
+/*
 .footer::before {
     content: "";
     position: absolute;
@@ -243,6 +244,7 @@ nav {
     z-index: 0; /* Keeps it behind text */
     pointer-events: none;
 }
+*/
 
 .page-banner {
     position: relative;

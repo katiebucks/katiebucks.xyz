@@ -218,6 +218,7 @@ nav {
     padding: 20px;
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.8); /* Ensures readability */
+    overflow: hidden; /* Prevents clipping */
 }
 
 .footer::before {
@@ -225,13 +226,20 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80px; /* Adjust watermark size */
-    height: 80px; /* Adjust watermark size */
+    width: 100px; /* Increase size for visibility */
+    height: 100px;
     background-image: url('katiebucks_logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.2; /* Adjust transparency */
+    opacity: 0.3; /* Make it more visible */
     transform: translate(-50%, -50%);
-    pointer-events: none; /* Ensures no interaction issues */
+    z-index: 0; /* Ensure it's behind text */
+    pointer-events: none; /* Prevents interaction */
+}
+
+/* Ensure text is above the background image */
+.footer p {
+    position: relative;
+    z-index: 1;
 }

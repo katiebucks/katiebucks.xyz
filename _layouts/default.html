@@ -1,7 +1,9 @@
-
 ---
-
-layout: default title: "Katie Bucks the Invisible FUCKS!" description: "Get schooled, fool! 👻" paginate: 20
+layout: default
+title: "Katie Bucks the Invisible FUCKS!"
+description: "Get schooled, fool! 👻"
+paginate: 20
+---
 
 <nav>
     <ul class="nav-links">
@@ -11,93 +13,101 @@ layout: default title: "Katie Bucks the Invisible FUCKS!" description: "Get scho
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
-</nav><section class="page-header">
+</nav>
+
+<section class="page-header">
     <h1 class="section-title">Katie Bucks the Invisible FUCKS!</h1>
-</section><section class="posts">
+</section>
+
+<section class="posts">
     <h2 class="section-title">Latest Posts</h2>
     {% for post in paginator.posts %}
-        <section class='blog-preview'>
-            <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
+        <section class="blog-preview">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p><em>{{ post.date | date: "%Y-%m-%d" }}</em></p>
             <p>{{ post.content | strip_html | truncate: 200 }}</p>
         </section>
     {% endfor %}
-</section><div class="pagination">
+</section>
+
+<div class="pagination">
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="next">Next</a>
     {% endif %}
-</div><style>
+</div>
+
+<style>
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-  background-color: #111;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 1.8;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
 }
 
 /* Navigation */
 nav {
-  background: #222;
-  width: 100%;
-  padding: 15px 0;
-  border-bottom: 4px solid #FF69B4;
-  box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: #222;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 4px solid #FF69B4;
+    box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1200px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .nav-links li {
-  display: inline;
-  margin: 5px;
+    display: inline;
+    margin: 5px;
 }
 
 .nav-links a {
-  color: #89CFF0;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-  padding: 10px 15px;
-  border-radius: 8px;
+    color: #89CFF0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 .nav-links a:hover {
-  background: rgba(255, 105, 180, 0.2);
-  color: #FF69B4;
+    background: rgba(255, 105, 180, 0.2);
+    color: #FF69B4;
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    text-align: center;
-  }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 </style>

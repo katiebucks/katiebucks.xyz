@@ -24,3 +24,8 @@ collections:
   pages:
     output: true
     permalink: /:name/
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/

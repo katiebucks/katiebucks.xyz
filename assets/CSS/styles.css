@@ -58,9 +58,10 @@ footer {
     padding: 20px;
     background-color: #222;
     color: #FF69B4;
-    position: fixed;
-    width: 100%;
+    border-top: 2px solid #FF69B4;
+    position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 /* Mobile Navigation Swipe */
@@ -89,15 +90,19 @@ footer {
 
 /* Button Styling */
 .button {
-    background-color: #FF69B4;
-    color: #111;
+    background: linear-gradient(45deg, #FF69B4, #89CFF0);
+    border-radius: 12px;
     padding: 10px 20px;
+    color: #111;
+    font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .button:hover {
-    background-color: #89CFF0;
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #89CFF0, #FF69B4);
+    box-shadow: 0 0 15px #FF69B4;
 }
 
 /* Blog Post Formatting */
@@ -137,56 +142,7 @@ footer {
     box-shadow: 0 0 10px #FF69B4;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.page-content {
-    animation: slideIn 0.5s ease-in-out;
-}
-
-.content-container {
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .content-container {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        justify-content: space-around;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-    }
-
-    .nav-links li {
-        scroll-snap-align: center;
-        flex: 1;
-        text-align: center;
-    }
-}
-
-/* Smooth slide transition between pages */
-.page-transition {
-    animation: slideIn 0.5s ease-in-out;
-}
-
+/* Smooth slide transition */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -198,37 +154,50 @@ footer {
     }
 }
 
-.glow-effect {
+.page-transition, .page-content {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Content Container */
+.content-container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    .content-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Mobile Swipe Navigation */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    .nav-links li {
+        scroll-snap-align: center;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Pink Glow Effect Enhancements */
+.glow-effect, 
+.nav-links a:hover, 
+.button:hover, 
+h1, h2 {
     text-shadow: 0 0 15px #FF69B4;
 }
 
-.nav-links a:hover, .button:hover, h1, h2 {
-    text-shadow: 0 0 15px #FF69B4;
-}
-
-.button {
-    background: linear-gradient(45deg, #FF69B4, #89CFF0);
-    border-radius: 12px;
-    padding: 10px 20px;
-    color: #111;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, #89CFF0, #FF69B4);
-}
-
-footer {
-    background-color: #222;
-    color: #FF69B4;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    border-top: 2px solid #FF69B4;
-}
-
+/* Banner */
 .banner {
     width: auto;
     max-width: 100%;
@@ -236,22 +205,19 @@ footer {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    aspect-ratio: 16 / 9; /* Keeps a consistent height-to-width ratio */
-    min-height: 200px; /* Ensures it's never too short */
-    max-height: 50vh; /* Prevents it from taking too much space */
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    max-height: 50vh;
 }
-
 .banner img {
     width: 100%;
-    height: 100%; /* Ensures it fills the .banner */
-    object-fit: cover; /* Crops the image to fit */
+    height: 100%;
+    object-fit: cover;
     filter: brightness(50%);
 }
-
 @media screen and (max-width: 768px) {
     .banner {
-        aspect-ratio: auto; /* Allows flexibility on mobile */
-        min-height: 180px; /* Slightly smaller for mobile */
-        max-height: 40vh; /* Ensures it's not too large */
+        min-height: 180px;
+        max-height: 40vh;
     }
 }

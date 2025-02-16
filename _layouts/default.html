@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-ancestors 'none'; base-uri 'none';">
-    <title>{{ page.title }} | Katie Bucks</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Katie Bucks</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    {% include header.html %}
+    <header>
+        <div class="banner">
+            <img src="assets/images/banner.jpg" alt="Banner">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRIVACY GUIDE</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        {{ content }}
+        <section class="intro">
+            <h1 class="glow">KATIE BUCKS THE INVISIBLE FUCKS!</h1>
+            <p>Spitting facts and rewriting rules | Get schooled, fool! </p>
+            <a href="#" class="button">LATEST POSTS</a>
+        </section>
+        <section class="blog-post fade-in">
+            <h2>Sample Blog Post</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Read more...</a></p>
+        </section>
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
     </main>
-    {% include footer.html %}
+    <footer>
+        <p>&copy; 2025 Katie Bucks | Secure & Private</p>
+        <img src="assets/images/watermark.png" alt="Watermark">
+    </footer>
 </body>
 </html>

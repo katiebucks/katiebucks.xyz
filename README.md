@@ -7,4 +7,5 @@ https://katiebucks.github.io/abc.katiebucks.xyz
 ---
 Coming soon: abc.katiebucks.xyz
 
-Want to help? send a DM, I've got loads of to be done!
+Want to help?<br>
+send a DM, I've got loads of to be done!

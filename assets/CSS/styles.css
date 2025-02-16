@@ -197,3 +197,25 @@ footer {
         transform: translateX(0);
     }
 }
+
+.glow-effect {
+    text-shadow: 0 0 15px #FF69B4;
+}
+
+.nav-links a:hover, .button:hover, h1, h2 {
+    text-shadow: 0 0 15px #FF69B4;
+}
+
+.button {
+    background: linear-gradient(45deg, #FF69B4, #89CFF0);
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #89CFF0, #FF69B4);
+}

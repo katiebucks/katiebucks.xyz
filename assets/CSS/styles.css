@@ -15,14 +15,15 @@ body {
     width: 100%;
 }
 
-/* Navigation Bar */
+/* Navigation Bar with Gradient */
 nav {
-    background-color: #222;
+    background: linear-gradient(90deg, #FF69B4, #89CFF0);
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    max-width: 1200px; /* Matches the banner */
+    max-width: 1200px;
     z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.6);
 }
 nav ul {
     list-style-type: none;
@@ -36,19 +37,19 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
-    color: #FF69B4;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: text-shadow 0.3s ease-in-out;
 }
 nav ul li a:hover {
-    text-shadow: 0 0 10px #FF69B4;
+    text-shadow: 0 0 15px #fff;
 }
 
-/* Responsive Banner */
+/* Banner Section with Glow */
 .banner {
     width: 100%;
-    max-width: 1200px; /* Matches navbar width */
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +57,29 @@ nav ul li a:hover {
     aspect-ratio: 16 / 9;
     min-height: 200px;
     max-height: 50vh;
+    border: 4px solid;
+    border-image-source: linear-gradient(90deg, #FF69B4, #89CFF0);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 20px 5px rgba(255, 105, 180, 0.8);
 }
 .banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(80%);
+}
+
+/* Main Content Card */
+.content-card {
+    background: rgba(34, 34, 34, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #FF69B4;
+    box-shadow: 0 0 15px #FF69B4;
 }
 
 /* Pagination */
@@ -80,7 +98,7 @@ nav ul li a:hover {
     text-shadow: 0 0 10px #89CFF0;
 }
 
-/* Footer */
+/* Footer with Glow */
 footer {
     text-align: center;
     padding: 20px;
@@ -88,6 +106,7 @@ footer {
     color: #FF69B4;
     border-top: 2px solid #FF69B4;
     width: 100%;
+    box-shadow: 0px -4px 10px rgba(255, 105, 180, 0.6);
 }
 
 /* Mobile Navigation Swipe */

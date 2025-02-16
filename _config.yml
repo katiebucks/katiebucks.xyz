@@ -29,3 +29,7 @@ collections:
   posts:
     output: true
     permalink: /_posts/:year/:month/:day/:title/
+
+collections:
+  categories:
+    output: true

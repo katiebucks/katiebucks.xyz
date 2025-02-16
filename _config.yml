@@ -6,7 +6,7 @@ timezone: "UTC"
 
 permalink: "/:title/"
 markdown: kramdown
-paginate: 10
+paginate: 20
 paginate_path: "/page:num/"
 exclude:
   - Gemfile
@@ -29,6 +29,3 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title/
-
-paginate: 10
-paginate_path: "/page:num/"

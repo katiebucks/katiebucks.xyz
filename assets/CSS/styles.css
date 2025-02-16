@@ -7,23 +7,32 @@ body {
     padding: 0;
 }
 
+/* Container to Keep Navbar & Banner in Sync */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #222;
     padding: 10px 0;
     text-align: center;
-    position: fixed;
     width: 100%;
-    top: 0;
+    max-width: 1200px; /* Matches the banner */
     z-index: 1000;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 nav ul li a {
@@ -34,6 +43,25 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-shadow: 0 0 10px #FF69B4;
+}
+
+/* Responsive Banner */
+.banner {
+    width: 100%;
+    max-width: 1200px; /* Matches navbar width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    max-height: 50vh;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
 }
 
 /* Pagination */
@@ -59,90 +87,32 @@ footer {
     background-color: #222;
     color: #FF69B4;
     border-top: 2px solid #FF69B4;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
 /* Mobile Navigation Swipe */
 @media screen and (max-width: 768px) {
+    .header-container {
+        width: 100%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
     nav ul {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        min-height: 180px;
+        max-height: 40vh;
     }
 }
 
-/* Pink Glow Effect */
-.glow {
-    text-shadow: 0 0 20px #FF69B4;
-}
-
-/* High Contrast Accessibility */
-@media (prefers-contrast: high) {
-    body {
-        background-color: #000;
-        color: #fff;
-    }
-    nav, footer {
-        background-color: #000;
-    }
-}
-
-/* Button Styling */
-.button {
-    background: linear-gradient(45deg, #FF69B4, #89CFF0);
-    border-radius: 12px;
-    padding: 10px 20px;
-    color: #111;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-.button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, #89CFF0, #FF69B4);
-    box-shadow: 0 0 15px #FF69B4;
-}
-
-/* Blog Post Formatting */
-.blog-post {
-    border-left: 5px solid #FF69B4;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-.blog-post h2 {
-    color: #FF69B4;
-}
-.blog-post a {
-    color: #89CFF0;
-    text-decoration: none;
-}
-.blog-post a:hover {
-    text-shadow: 0 0 10px #89CFF0;
-}
-
-/* Animated Elements */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-.post-thumbnail {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #FF69B4;
-}
-
-/* Smooth slide transition */
+/* Smooth Slide Transition */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -156,68 +126,4 @@ footer {
 
 .page-transition, .page-content {
     animation: slideIn 0.5s ease-in-out;
-}
-
-/* Content Container */
-.content-container {
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-}
-@media screen and (max-width: 768px) {
-    .content-container {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
-/* Mobile Swipe Navigation */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        justify-content: space-around;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-    }
-    .nav-links li {
-        scroll-snap-align: center;
-        flex: 1;
-        text-align: center;
-    }
-}
-
-/* Pink Glow Effect Enhancements */
-.glow-effect, 
-.nav-links a:hover, 
-.button:hover, 
-h1, h2 {
-    text-shadow: 0 0 15px #FF69B4;
-}
-
-/* Banner */
-.banner {
-    width: auto;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    aspect-ratio: 16 / 9;
-    min-height: 200px;
-    max-height: 50vh;
-}
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-@media screen and (max-width: 768px) {
-    .banner {
-        min-height: 180px;
-        max-height: 40vh;
-    }
 }

@@ -219,3 +219,12 @@ footer {
     transform: scale(1.05);
     background: linear-gradient(45deg, #89CFF0, #FF69B4);
 }
+
+footer {
+    background-color: #222;
+    color: #FF69B4;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    border-top: 2px solid #FF69B4;
+}

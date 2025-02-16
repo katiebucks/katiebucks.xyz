@@ -1,3 +1,4 @@
+<!-- index.md -->
 ---
 layout: default
 title: "Home"
@@ -5,8 +6,7 @@ pagination: true
 ---
 
 <div class="header-container">
-    <!-- Navigation Bar -->
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/privacy">Privacy Guide</a></li>
@@ -16,10 +16,15 @@ pagination: true
         </ul>
     </nav>
 
-    <!-- Banner -->
     <div class="banner">
         <img src="/assets/images/banner.jpg" alt="Banner">
     </div>
+</div>
+
+<div class="content-card">
+    <h1>KATIE BUCKS THE INVISIBLE FUCKS!</h1>
+    <p>Spitting facts and rewriting rules | Get schooled, fool! 🖕</p>
+    <a href="/blog" class="button">LATEST POSTS</a>
 </div>
 
 <h1>Latest Posts</h1>
@@ -32,7 +37,6 @@ pagination: true
   </div>
 {% endfor %}
 
-<!-- Pagination Links -->
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}">&laquo; Previous</a>

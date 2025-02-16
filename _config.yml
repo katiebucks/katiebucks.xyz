@@ -18,6 +18,7 @@ exclude:
   - .github
 
 plugins:
+  - jekyll-feed
   - jekyll-paginate
 
 collections:

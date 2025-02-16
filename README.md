@@ -5,7 +5,5 @@ https://katiebucks.github.io/abc.katiebucks.xyz/ <br>
 
 ---
 
-<br>Coming soon: https://abc.katiebucks.xyz/
-<br>
-Want to help?<br>
-Send a DM, I've got loads of to be done!
+Coming soon: https://abc.katiebucks.xyz/ <br>
+Want to help? Send a DM!,

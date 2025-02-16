@@ -28,4 +28,4 @@ collections:
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: /_posts/:year/:month/:day/:title/

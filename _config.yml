@@ -29,3 +29,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title/
+
+paginate: 10
+paginate_path: "/page:num/"

@@ -164,3 +164,36 @@ footer {
         padding: 15px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .nav-links li {
+        scroll-snap-align: center;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Smooth slide transition between pages */
+.page-transition {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -3,39 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Bucks</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | asset_path }}">
+    {% include head.html %}
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <img src="assets/images/banner.jpg" alt="Banner">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRIVACY GUIDE</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include header.html %}
     <main>
-        <section class="intro">
-            <h1 class="glow">KATIE BUCKS THE INVISIBLE FUCKS!</h1>
-            <p>Spitting facts and rewriting rules | Get schooled, fool! </p>
-            <a href="#" class="button">LATEST POSTS</a>
-        </section>
-        <section class="blog-post fade-in">
-            <h2>Sample Blog Post</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Read more...</a></p>
-        </section>
-        <div class="pagination">
-            <a href="#">Previous</a>
-            <a href="#">Next</a>
-        </div>
+        {{ content }}
     </main>
-    <footer>
-        <p>&copy; 2025 Katie Bucks | Secure & Private</p>
-        <img src="assets/images/watermark.png" alt="Watermark">
-    </footer>
+    {% include footer.html %}
 </body>
 </html>

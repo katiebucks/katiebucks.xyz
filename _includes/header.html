@@ -1,31 +1,10 @@
 <header class="banner-header">
     <div class="banner">
-        <img src="{{ page.banner | default: '/assets/images/banner.jpg' }}" alt="Page Banner">
+        <picture>
+            <source srcset="{{ page.banner_mobile | default: '/assets/images/banner-mobile.jpg' }}" media="(max-width: 768px)">
+            <img src="{{ page.banner | default: '/assets/images/banner.jpg' }}" alt="Page Banner">
+        </picture>
         <h1 class="page-title">{{ page.title }}</h1>
     </div>
     {% include navbar.html %}
 </header>
-
-<style>
-.banner {
-    width: auto;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-
-@media screen and (max-width: 768px) {
-    .banner {
-        height: 200px;
-    }
-}
-</style>

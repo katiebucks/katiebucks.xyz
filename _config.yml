@@ -1,18 +1,24 @@
-title: "Katie Bucks the Invisible FUCKS!"
-description: "Sum bullsheet!"
-baseurl: "/katiebucks.xyz"
+title: "Katie Bucks the Invisible Fucks!"
+description: "Some short site description"
 url: "https://katiebucks.github.io"
+baseurl: "/katiebucks.xyz"
 timezone: "UTC"
 
 sass:
   sass_dir: "_sass"
   style: compressed
 
-permalink: "/:title/"
+# Permalinks
+permalink: "/:title/"   # or set to "pretty"
+
+# Build settings
 markdown: kramdown
 theme: minima
-paginate: 20
+
+# Pagination
+paginate: 10
 paginate_path: "/page:num/"
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -36,7 +42,7 @@ collections:
   categories:
     output: true
 
-# Navbar Links Correction
+# Navbar Links
 nav_links:
   - title: Home
     url: "/"
@@ -47,7 +53,12 @@ nav_links:
   - title: PGP
     url: "/pgp/"
 
-# Enforce Correct Asset Paths
+assets:
+  css: "/assets/css/main.css"
+  images: "/assets/images/"
+  js: "/assets/js/"
+
+# Default Layouts
 defaults:
   - scope:
       path: ""
@@ -60,7 +71,15 @@ defaults:
     values:
       layout: "default"
 
-# Fix GitHub Pages URL Handling
+# Optional relative links config
 relative_links:
   enabled: true
   collections: true
+
+# Remember: Jekyll won't auto-generate CSP from this block
+csp:
+  default-src: "'self'"
+  img-src: "'self' data:"
+  style-src: "'self' 'unsafe-inline'"
+  font-src: "'self'"
+  script-src: "'self'"

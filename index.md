@@ -6,16 +6,6 @@ permalink: /
 ---
 
 <div class="header-container">
-    <nav class="navbar">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/privacy">Privacy Guide</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/mirrors">Mirrors</a></li>
-            <li><a href="/pgp">PGP</a></li>
-        </ul>
-    </nav>
-
     <div class="banner">
         <img src="/assets/images/banner.jpg" alt="Banner">
     </div>

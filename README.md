@@ -1,5 +1,5 @@
-<h2>Katie Bucks the</br>
-  Invisible FUCKS!</h2>
+<h1>Katie Bucks the</br>
+  Invisible FUCKS!</h1>
 https://katiebucks.github.io/katiebucks.xyz
 Coming soon: https://katiebucks.xyz</br>
 

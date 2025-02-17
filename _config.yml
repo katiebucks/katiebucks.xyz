@@ -73,7 +73,7 @@ defaults:
 
 # Optional relative links config
 relative_links:
-  enabled: true
+  enabled: false    #true?
   collections: true
 
 # Remember: Jekyll won't auto-generate CSP from this block

@@ -5,5 +5,4 @@ Coming soon: https://katiebucks.xyz</br>
 
 ---
 
-Want to help? Send a DM! There's lots to be done and lots to talk about! 🥰 </br>
-#LETSBUILDIT
+Want to help? Send a DM! There's lots to be done and lots to talk about! 🥰 #LETSBUILDIT

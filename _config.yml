@@ -64,14 +64,6 @@ defaults:
     values:
       layout: "default"
 
-# Strict Content Security Policy
-csp:
-  default-src: "'self'"
-  img-src: "'self' data:"
-  style-src: "'self' 'unsafe-inline'"
-  font-src: "'self'"
-  script-src: "'self'"
-
 # Fix GitHub Pages URL Handling
 relative_links:
   enabled: true

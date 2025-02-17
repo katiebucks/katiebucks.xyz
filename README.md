@@ -2,4 +2,6 @@
   Invisible FUCKS!</h2>
 https://katiebucks.github.io/katiebucks.xyz
 Coming soon: https://katiebucks.xyz</br>
-Want to help? Send a DM! There's lots to be done and lots to talk about! 🥰 Let's Build It. ©️
+---
+Want to help? Send a DM! There's lots to be done and lots to talk about! 🥰
+Let's Build It. ©️

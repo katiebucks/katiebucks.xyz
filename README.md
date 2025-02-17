@@ -5,5 +5,5 @@ https://katiebucks.github.io/katiebucks.xyz
 
 ---
 
-Coming soon: https://katiebucks.xyz<\br>
+Coming soon: https://katiebucks.xyz</br>
 Want to help? Send a DM!

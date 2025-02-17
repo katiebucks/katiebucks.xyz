@@ -5,12 +5,6 @@ pagination: true
 permalink: /
 ---
 
-<div class="header-container">
-    <div class="banner">
-        <img src="/assets/images/banner.jpg" alt="Banner">
-    </div>
-</div>
-
 <div class="content-card">
     <h1>KATIE BUCKS THE INVISIBLE FUCKS!</h1>
     <p>Spitting facts and rewriting rules | Get schooled, fool! 🖕</p>

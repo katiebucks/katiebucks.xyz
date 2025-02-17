@@ -1,11 +1,16 @@
-<!-- footer.html -->
+<!-- _includes/footer.html -->
 <footer class="footer">
-    <div class="footer-content">
-        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Site Logo" class="footer-logo">
-        <p>&copy; 2025 Katie Kraus. All rights reserved.</p>
-        <p>
-            <a href="/terms/">Terms and Conditions</a> | 
-            <a href="/privacy-policy/">Privacy Policy</a>
-        </p>
-    </div>
-</footer
+  <div class="footer-content">
+    <img
+      src="{{ '/assets/images/logo.png' | relative_url }}"
+      alt="Site Logo"
+      class="footer-logo"
+    >
+    <p>&copy; {{ 'now' | date: "%Y" }} Katie Kraus. All rights reserved.</p>
+    <p>
+      <a href="{{ '/terms/' | relative_url }}">Terms and Conditions</a>
+      |
+      <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #00c2ff, #ff0080);
+    --glow-color: #ff0080;
+}
+
+body {
+    background: var(--primary-gradient);
+}
+
+img, .glowing-text {
+    text-shadow: 0px 0px 10px var(--glow-color);
+}

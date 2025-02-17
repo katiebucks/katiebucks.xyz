@@ -3,6 +3,9 @@ description: "Sum bullsheet!"
 baseurl: "/katiebucks.xyz"
 url: "https://katiebucks.github.io"
 timezone: "UTC"
+sass: on
+  sass_dir: _sass
+  style: compressed
 
 permalink: "/:title/"
 markdown: kramdown
@@ -31,3 +34,61 @@ collections:
     permalink: /:year/:month/:day/:title/
   categories:
     output: true
+
+# Pagination settings
+paginate: 10
+paginate_path: "/page:num/"
+
+# Other settings
+version: 2.0.1
+
+# Navbar Links Correction
+nav_links:
+  - title: Home
+    url: "/"
+  - title: About
+    url: "/about/"
+  - title: Privacy Guide
+    url: "/privacy-guide/"
+  - title: PGP
+    url: "/pgp/"
+
+# Ensure correct paths for assets
+assets:
+  css: "/assets/css/main.css"
+  images: "/assets/images/"
+  js: "/assets/js/"
+
+# Jekyll Build Configuration
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Enforce Correct Asset Paths
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Strict Content Security Policy
+csp:
+  default-src: "'self'"
+  img-src: "'self' data:"
+  style-src: "'self' 'unsafe-inline'"
+  font-src: "'self'"
+  script-src: "'self'"
+
+# Fix GitHub Pages URL Handling
+relative_links:
+  enabled: true
+  collections: true

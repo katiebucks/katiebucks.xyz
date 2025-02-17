@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: "Privacy Policy"
 description: "Your privacy matters. Read about our commitment to online anonymity and security."
+permalink: /privacy-policy/
 ---
 
 # Privacy Policy

@@ -36,10 +36,6 @@ collections:
   categories:
     output: true
 
-# Pagination settings
-paginate: 10
-paginate_path: "/page:num/"
-
 # Navbar Links Correction
 nav_links:
   - title: Home

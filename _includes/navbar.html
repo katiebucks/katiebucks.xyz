@@ -1,8 +1,8 @@
-<!-- navbar.html -->
-<nav class="navbar">
-    <ul>
-        {% for item in site.data.navigation %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
+<nav>
+  <ul>
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    <li><a href="{{ site.baseurl }}/about/">About</a></li>
+    <li><a href="{{ site.baseurl }}/privacy-guide/">Privacy Guide</a></li>
+    <li><a href="{{ site.baseurl }}/pgp/">PGP</a></li>
+  </ul>
 </nav>

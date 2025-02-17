@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Privacy Policy"
 description: "Your privacy matters. Read about our commitment to online anonymity and security."
 ---

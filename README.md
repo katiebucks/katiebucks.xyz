@@ -1,4 +1,3 @@
-The Official Website for...
 <h2>Katie Bucks the</br>
   Invisible FUCKS!</h2>
 https://katiebucks.github.io/katiebucks.xyz

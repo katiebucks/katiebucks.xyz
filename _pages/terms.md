@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Terms and Conditions"
 description: "Review the terms and conditions for using this website."
 permalink: /terms/

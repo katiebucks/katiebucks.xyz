@@ -23,7 +23,7 @@ We do not use cookies, session storage, local storage, or any form of tracking m
 There are no embedded videos, social media buttons, or external scripts. Any links to third-party sites are provided for reference, and we do not control their privacy policies.
 
 ## Contact, PGP Encryption, and GitHub Participation
-If you wish to contact me securely, I recommend using PGP encryption. My public key is available [here](_pages/PGP.asc). Additionally, the source code for this website is hosted on GitHub, and I encourage users to participate in improving security by reporting any bugs or vulnerabilities they find. You can contribute or submit issues on my [GitHub repository](https://github.com/katiebucks).
+If you wish to contact me securely, I recommend using PGP encryption. My public key is available [here](/_pages/PGP.asc). Additionally, the source code for this website is hosted on GitHub, and I encourage users to participate in improving security by reporting any bugs or vulnerabilities they find. You can contribute or submit issues on my [GitHub repository](https://github.com/katiebucks).
 
 ## Policy Updates
 This Privacy Policy may be updated at any time, but our core commitment to privacy will never change. If updates occur, they will be reflected on this page immediately.

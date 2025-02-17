@@ -40,9 +40,6 @@ collections:
 paginate: 10
 paginate_path: "/page:num/"
 
-# Other settings
-version: 2.0.1
-
 # Navbar Links Correction
 nav_links:
   - title: Home
@@ -53,20 +50,6 @@ nav_links:
     url: "/privacy-guide/"
   - title: PGP
     url: "/pgp/"
-
-# Ensure correct paths for assets
-assets:
-  css: "/assets/css/main.css"
-  images: "/assets/images/"
-  js: "/assets/js/"
-
-# Jekyll Build Configuration
-markdown: kramdown
-permalink: pretty
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
 
 # Enforce Correct Asset Paths
 defaults:

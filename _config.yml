@@ -1,11 +1,12 @@
 title: "Katie Bucks the Invisible FUCKS!"
 description: "Sum bullsheet!"
-baseurl: ""
+baseurl: "/katiebucks.xyz"
 url: "https://katiebucks.xyz"
 timezone: "UTC"
 
 permalink: "/:title/"
 markdown: kramdown
+theme: minima
 paginate: 20
 paginate_path: "/page:num/"
 exclude:

@@ -1,5 +1,5 @@
 title: "Katie Bucks the Invisible FUCKS!"
-description: "Sum bullsheet!
+description: "Sum bullsheet!"
 baseurl: ""
 url: "https://katiebucks.xyz"
 timezone: "UTC"
@@ -25,12 +25,8 @@ collections:
   pages:
     output: true
     permalink: /:name/
-
-collections:
   posts:
     output: true
-    permalink: /_posts/:year/:month/:day/:title/
-
-collections:
+    permalink: /:year/:month/:day/:title/
   categories:
     output: true

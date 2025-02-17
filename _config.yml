@@ -3,8 +3,9 @@ description: "Sum bullsheet!"
 baseurl: "/katiebucks.xyz"
 url: "https://katiebucks.github.io"
 timezone: "UTC"
-sass: on
-  sass_dir: _sass
+
+sass:
+  sass_dir: "_sass"
   style: compressed
 
 permalink: "/:title/"

@@ -1,25 +1,23 @@
 title: "Katie Bucks the Invisible Fucks!"
-description: "Some short site description"
-url: "https://katiebucks.github.io"
+description: "Sum bullsheet!"
 baseurl: "/katiebucks.xyz"
+url: "https://katiebucks.github.io"
+permalink: /:categories/:title/
+markdown: kramdown
+theme: minima
 timezone: "UTC"
 
 sass:
   sass_dir: "_sass"
   style: compressed
 
-# Permalinks
-permalink: "/:title/"   # or set to "pretty"
-
-# Build settings
-markdown: kramdown
-theme: minima
-
-# Pagination
-paginate: 10
-paginate_path: "/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
 
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
@@ -28,9 +26,10 @@ exclude:
   - .git
   - .github
 
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
 
 collections:
   pages:
@@ -56,7 +55,6 @@ nav_links:
 assets:
   css: "/assets/css/main.css"
   images: "/assets/images/"
-  js: "/assets/js/"
 
 # Default Layouts
 defaults:
@@ -73,13 +71,13 @@ defaults:
 
 # Optional relative links config
 relative_links:
-  enabled: false    #true?
+  enabled: true
   collections: true
 
 # Remember: Jekyll won't auto-generate CSP from this block
 csp:
   default-src: "'self'"
   img-src: "'self' data:"
-  style-src: "'self' 'unsafe-inline'"
+  style-src: "'self'"
   font-src: "'self'"
   script-src: "'self'"

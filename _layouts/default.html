@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-ancestors 'none'; base-uri 'none';">
+    {% include head.html %}
 </head>
 <body>
-  {% include header.html %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer.html %}
+    {% include navbar.html %}
+    <main class="container">
+        {{ content }}
+    </main>
+    {% include footer.html %}
 </body>
 </html>

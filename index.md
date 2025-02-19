@@ -11,7 +11,7 @@ This is a privacy-first, secure blog powered by Jekyll. All content is staticall
 
 
 <div align=center class="content-card">
-    <h1>KATIE BUCKS THE INVISIBLE FUCKS!</h1>
+    <h1>👻 KATIE BUCKS THE INVISIBLE FUCKS! 👻</h1>
     <p>Spitting facts and rewriting rules | Get schooled, fool! 🖕</p>
     <a href="/blog" class="button">LATEST POSTS</a>
 </div>

@@ -116,3 +116,70 @@ body {
     height: auto;
     object-fit: cover;
 }
+
+/* Banner Container */
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner Section with Glow */
+.banner {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    max-height: 50vh;
+    border: 4px solid;
+    border-image-source: linear-gradient(90deg, #FF69B4, #89CFF0);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 20px 5px rgba(255, 105, 180, 0.8);
+}
+
+/* Ensuring Image Responsiveness */
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+/* Banner Text Overlay */
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .banner {
+        max-height: 40vh;
+    }
+    
+    .banner-text h1 {
+        font-size: 1.8em;
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+}

@@ -19,9 +19,9 @@
         flex-wrap: wrap;
     }
 
-    .banner {
-        min-height: 180px;
-        max-height: 40vh;
+    .top-banner {
+        min-height: 50px;
+        max-height: 12vh;
     }
 }
 
@@ -53,16 +53,6 @@
 
 .page-transition, .page-content {
     animation: slideIn 0.5s ease-in-out;
-}
-
-/* Footer Banner Styling */
-.footer-banner {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    opacity: 0.4; /* Partly transparent */
 }
 
 /* Enhanced Glow Effect */

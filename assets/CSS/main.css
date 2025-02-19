@@ -128,3 +128,80 @@ body {
         opacity: 0.4;
     }
 }
+
+/* Ensure full page centering */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main content centering */
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header and Footer Banner Adjustments */
+.header-banner, .footer-banner {
+  width: 100%;
+  max-height: 80px; /* Adjust to make banners smaller */
+  object-fit: cover;
+}
+
+/* Ensure header and footer text is larger than banners */
+.site-header h1, .site-footer p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Navbar for desktop mode (horizontal layout) */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px; /* Space between navbar items */
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Mobile adjustments will be handled later */
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+}

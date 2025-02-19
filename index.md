@@ -5,16 +5,13 @@ pagination: true
 permalink: /
 ---
 
-# Welcome to KatieBucks.xyz
-
-This is a privacy-first, secure blog powered by Jekyll. All content is statically generated with no tracking, no cookies, and no external scripts.
-
-
 <div align=center class="content-card">
     <h1>👻 KATIE BUCKS THE INVISIBLE FUCKS! 👻</h1>
     <p>Spitting facts and rewriting rules | Get schooled, fool! 🖕</p>
     <a href="/blog" class="button">LATEST POSTS</a>
 </div>
+
+This is a privacy-first, secure blog powered by Jekyll. All content is statically generated with no tracking, no cookies, and no external scripts.
 
 <h1>Latest Posts</h1>
 

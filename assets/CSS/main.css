@@ -41,13 +41,13 @@ body {
 /* Top Banner Adjustments */
 .top-banner {
     width: 100%;
-    max-width: 1200px;
+    max-width: 256px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     aspect-ratio: 16 / 9;
-    min-height: 66px; /* Reduced to 1/3rd of previous size */
+    min-height: 64px; /* Reduced to 1/3rd of previous size */
     max-height: 16.67vh;
     border-radius: 20px; /* Rounded corners */
     border: 4px solid;
@@ -67,7 +67,7 @@ body {
 /* Footer Banner Adjustments */
 .footer-banner {
     width: 100%;
-    max-width: 600px; /* Reduced to 1/7th of previous size */
+    max-width: 128px
     opacity: 0.5; /* Half transparency */
     display: block;
     margin: 0 auto;

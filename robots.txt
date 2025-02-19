@@ -3,3 +3,5 @@ Disallow: /search
 Disallow: /private
 Disallow: /admin
 Disallow: /cgi-bin
+
+Allow: /assets/images/

@@ -1,12 +1,13 @@
-title: "Katie Bucks the Invisible Fucks!"
-description: "Sum bullsheet!"
-baseurl: "/katiebucks.xyz"
-url: "https://katiebucks.github.io"
+title: "KatieBucks.xyz"
+description: "Privacy‑first, zero‑tracking hub"
+baseurl: ""            # root‑relative deployment
+url: "https://katiebucks.xyz"
+
 permalink: /:categories/:title/
 markdown: kramdown
 theme: minima
-timezone: "UTC"
-incremental: false
+timezone: "America/Chicago"
+incremental: true
 
 sass:
   sass_dir: "_sass"
@@ -19,66 +20,36 @@ plugins:
 
 exclude:
   - README.md
-  - Gemfile
-  - Gemfile.lock
+  - Gemfile*
   - node_modules
   - vendor
-  - README.md
-  - .git
-  - .github
-
+  - .git*
 
 # Pagination
 paginate: 10
 paginate_path: "/page:num/"
 
-collections:
-  pages:
-    output: true
-    permalink: /:name/
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/
-  categories:
-    output: true
-
-# Navbar Links
+# Fixed five‑link navbar
 nav_links:
   - title: Home
     url: "/"
-  - title: About
-    url: "/about/"
   - title: Privacy Guide
     url: "/privacy-guide/"
+  - title: Contact
+    url: "/contact/"
+  - title: Mirrors
+    url: "/mirrors/"
   - title: PGP
     url: "/pgp/"
 
 assets:
-  css: "/assets/css/main.css"
-  images: "/assets/images/"
+  css: "/assets/css"
+  images: "/assets/images"
 
-# Default Layouts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-# Optional relative links config
-relative_links:
-  enabled: true
-  collections: true
-
-# Remember: Jekyll won't auto-generate CSP from this block
+# Optional CSP helper reference (enforced via <meta> tag)
 csp:
   default-src: "'self'"
-  img-src: "'self' data:"
-  style-src: "'self'"
-  font-src: "'self'"
-  script-src: "'self'"
+  img-src:     "'self' data:"
+  style-src:   "'self'"
+  font-src:    "'self'"
+  script-src:  "'self'"

@@ -1,9 +1,11 @@
+<!-- _pages/contact.md -->
 ---
-layout: page
-title: "Encrypted Contact"
+layout: default
+title: Contact
+permalink: /contact/
 ---
 
-## Secure Communication Options
+# Contact
 
-### PGP Email
-Use my **public PGP key** below to send encrypted e‑mail.
+* **Email:** [contact@katiebucks.xyz](mailto:contact@katiebucks.xyz)  
+* **PGP:** See the [PGP page]({{ '/pgp/' | relative_url }}) for Katie’s public key.

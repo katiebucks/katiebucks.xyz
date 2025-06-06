@@ -1,15 +1,33 @@
+<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-ancestors 'none'; base-uri 'none';">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
 
-    <main class="container page-content">
-      {{ content }}
-    </main>
+<header class="banner">
+  <img src="{{ '/assets/images/banner.jpg' | relative_url }}" alt="Site banner for Katie Bucks">
+</header>
 
-    {% include footer.html %}
-  </body>
+{% include navbar.html %}
+
+<div class="onion-link">
+  <a href="http://katiebucksonion123.onion/">Tor · .onion Mirror</a>
+</div>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  &copy; {{ "now" | date: "%Y" }} Katie Bucks · No JS · No cookies
+</footer>
+
+</body>
 </html>

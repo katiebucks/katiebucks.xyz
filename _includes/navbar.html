@@ -1,0 +1,5 @@
+<nav class="navbar{% if page.layout == 'mobile' %} mobile{% endif %}">
+  {% for link in site.nav_links %}
+    <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+  {% endfor %}
+</nav>

@@ -1,0 +1,17 @@
+/* Mobile‑first navigation helpers & subtle animations */
+@media screen and (max-width:768px){
+  .navbar{height:50px;align-items:center;justify-content:center;}
+
+  nav ul{display:flex;justify-content:space-around;flex-wrap:wrap;}
+}
+
+/* Swipe‑based mobile nav reveal */
+@keyframes swipeNav{from{transform:translateX(-100%);}to{transform:translateX(0);}}
+.navbar.mobile{animation:swipeNav .3s ease-in-out;}
+
+/* Page slide‑in transition */
+@keyframes slideIn{from{opacity:0;transform:translateX(-10%);}to{opacity:1;transform:translateX(0);}}
+.page-content{animation:slideIn .5s ease-in-out;}
+
+/* Pink glow utility */
+img,.glowing-text{text-shadow:0 0 10px var(--glow-color);}

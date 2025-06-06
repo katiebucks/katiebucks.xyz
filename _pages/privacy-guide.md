@@ -1,22 +1,22 @@
+<!-- _pages/privacy-guide.md -->
+---
+layout: default
+title: Privacy Guide
+permalink: /privacy-guide/
 ---
 
-## _pages/privacy-guide.md
-```markdown
----
-layout: page
-title: "Privacy Guide"
----
+# Privacy Guide
 
-### Essentials of Online Privacy
-- **Encrypt everything** – PGP for e‑mail; Signal for messaging.
-- **Browse anonymously** – Tor, Tails OS, privacy‑respecting search engines.
-- **Own your data footprint** – Avoid services that track or profile you.
+This site:
 
-### Recommended Tools
-| Purpose | Tool |
-| --- | --- |
-| Anonymous browsing | Tor Browser |
-| Live, amnesic OS | Tails |
-| E‑mail encryption | PGP / GPG |
+* runs entirely as static HTML/CSS—**no JavaScript, cookies, or trackers**.  
+* enforces a strict Content Security Policy.  
+* offers a Tor `.onion` mirror for anonymized access.
 
-Privacy is a *right*, not a privilege. Master these basics to keep control of your digital life.
+## Access via Tor
+
+1. Install the Tor Browser from torproject.org.  
+2. Navigate to <http://katiebucksonion123.onion/>  
+3. Enjoy identical content, minus clearnet metadata leaks.
+
+Stay private, stay free.

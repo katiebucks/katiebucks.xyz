@@ -1,6 +1,15 @@
+<!-- _pages/pgp.md -->
 ---
-layout: page
-title: "PGP Key"
+layout: default
+title: PGP Public Key
+permalink: /pgp/
 ---
 
-Below is my current **PGP public key**. Always verify the fingerprint before use.
+# PGP Public Key
+
+```text
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP
+
+mQENBF7ExampleKey... (dummy key for showcase only)
+-----END PGP PUBLIC KEY BLOCK-----

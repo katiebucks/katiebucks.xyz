@@ -1,12 +1,11 @@
+<!-- _pages/mirrors.md -->
 ---
-layout: page
-title: "Mirrors"
+layout: default
+title: Mirrors
+permalink: /mirrors/
 ---
 
-### Official Mirrors
-| Protocol | URL |
-| --- | --- |
-| Tor (.onion) | `http://katie-bucks.onion` |
-| IPFS | `ipfs://QmExampleHash` |
+# Mirrors
 
-Verify cryptographic signatures before trusting any mirror.
+* **Clearnet:** <https://katiebucks.xyz>  
+* **Tor (.onion):** <http://katiebucksonion123.onion/>

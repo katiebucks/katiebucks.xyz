@@ -1,55 +1,29 @@
-title: "KatieBucks.xyz"
-description: "Privacy‑first, zero‑tracking hub"
-baseurl: ""            # root‑relative deployment
-url: "https://katiebucks.xyz"
-
-permalink: /:categories/:title/
+# _config.yml
+title: "Katie Bucks the Invisible FUCKS!"
+description: "Personal VLOG/BLOG by Katie Bucks — privacy-first, JS-free."
+url: "https://katiebucks.xyz"   # change when deploying
+baseurl: ""                     # leave empty unless site lives in a sub-folder
 markdown: kramdown
-theme: minima
-timezone: "America/Chicago"
-incremental: true
-
-sass:
-  sass_dir: "_sass"
-  style: compressed
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-
-exclude:
-  - README.md
-  - Gemfile*
-  - node_modules
-  - vendor
-  - .git*
+highlighter: rouge
 
 # Pagination
-paginate: 10
+paginate: 5
 paginate_path: "/page:num/"
 
-# Fixed five‑link navbar
-nav_links:
-  - title: Home
-    url: "/"
-  - title: Privacy Guide
-    url: "/privacy-guide/"
-  - title: Contact
-    url: "/contact/"
-  - title: Mirrors
-    url: "/mirrors/"
-  - title: PGP
-    url: "/pgp/"
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 
-assets:
-  css: "/assets/css"
-  images: "/assets/images"
+# Defaults for posts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Katie Bucks"
 
-# Optional CSP helper reference (enforced via <meta> tag)
-csp:
-  default-src: "'self'"
-  img-src:     "'self' data:"
-  style-src:   "'self'"
-  font-src:    "'self'"
-  script-src:  "'self'"
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/

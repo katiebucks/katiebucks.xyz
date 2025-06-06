@@ -1,17 +1,50 @@
-/* Mobile‑first navigation helpers & subtle animations */
-@media screen and (max-width:768px){
-  .navbar{height:50px;align-items:center;justify-content:center;}
+/* assets/css/style.css */
 
-  nav ul{display:flex;justify-content:space-around;flex-wrap:wrap;}
+/* ----- CSS Variables ----- */
+:root{
+  --baby-blue:#89cff0;
+  --hot-pink:#ff69b4;
+  --dark-bg:#0d0d0d;
+  --text-light:#f1f1f1;
 }
 
-/* Swipe‑based mobile nav reveal */
-@keyframes swipeNav{from{transform:translateX(-100%);}to{transform:translateX(0);}}
-.navbar.mobile{animation:swipeNav .3s ease-in-out;}
+/* ----- Global ----- */
+html{scroll-behavior:smooth;background:var(--dark-bg);color:var(--text-light);font-family:system-ui,Arial,Helvetica,Verdana,sans-serif;}
+body{margin:0;padding:0;}
+a{color:var(--hot-pink);text-decoration:none;}
+a:hover,a:focus{color:var(--baby-blue);text-decoration:underline;}
+img{max-width:100%;height:auto;}
 
-/* Page slide‑in transition */
-@keyframes slideIn{from{opacity:0;transform:translateX(-10%);}to{opacity:1;transform:translateX(0);}}
-.page-content{animation:slideIn .5s ease-in-out;}
+/* ----- Banner ----- */
+.banner img{display:block;width:100%;height:auto;object-fit:cover;}
 
-/* Pink glow utility */
-img,.glowing-text{text-shadow:0 0 10px var(--glow-color);}
+/* ----- Navbar ----- */
+nav{
+  background:linear-gradient(90deg,var(--baby-blue),var(--hot-pink));
+  position:fixed;top:0;left:0;width:100%;z-index:1000;
+  box-shadow:0 0 10px var(--hot-pink);
+}
+.nav-container{display:flex;gap:1rem;overflow-x:auto;padding:0.75rem 1rem;}
+.nav-container a{white-space:nowrap;font-weight:600;padding:0.25rem 0.5rem;border-radius:0.25rem;color:var(--dark-bg);}
+.nav-container a:hover,.nav-container a:focus{background:rgba(0,0,0,0.1);}
+
+/* ----- Onion Link (below nav) ----- */
+.onion-link{text-align:center;padding:0.25rem;background:var(--dark-bg);font-size:0.9rem;}
+
+/* ----- Main Content ----- */
+main{max-width:900px;margin:0 auto;padding:6rem 1rem 4rem;}
+
+/* ----- Post previews & posts ----- */
+.post-preview,.post-content{background:rgba(255,255,255,0.04);padding:1.5rem;border-radius:0.75rem;margin-bottom:2rem;
+  box-shadow:0 0 8px var(--hot-pink);}
+.post-preview h2{margin-top:0;color:var(--baby-blue);}
+.excerpt{opacity:0.85;}
+.meta{font-size:0.9rem;color:var(--hot-pink);}
+
+/* ----- Pagination ----- */
+.pagination{display:flex;justify-content:space-between;font-weight:600;margin-top:2rem;}
+.pagination a{background:var(--hot-pink);color:var(--dark-bg);padding:0.25rem 0.75rem;border-radius:0.25rem;}
+.pagination a:hover{background:var(--baby-blue);}
+
+/* ----- Footer ----- */
+footer{padding:2rem 1rem;text-align:center;font-size:0.9rem;opacity:0.8;}

@@ -1,15 +1,11 @@
+<!-- _pages/about.md -->
 ---
-layout: page
-title: "About Me"
+layout: default
+title: About
+permalink: /about/
 ---
 
-## Who Am I?
-I'm Katie Bucks, a writer, digital‑privacy advocate, and creator of this secure, privacy‑first corner of the web.
+# About
 
-## Why This Site Exists
-I believe online spaces should champion freedom and security. This site embodies that ethos: **zero tracking, no invasive scripts, 100% independence from third‑party surveillance**.
-
-## What You’ll Find Here
-- Articles on privacy and security
-- Personal reflections on maintaining digital autonomy
-- PGP details for secure communication
+**Katie Bucks the Invisible FUCKS!** is an uncensored VLOG/BLOG sharing Katie’s life, art, and insights.  
+Grounded in privacy, built without JavaScript, and mirrored on Tor, this site proves you don’t need trackers to tell powerful stories.

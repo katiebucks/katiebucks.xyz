@@ -1,12 +1,10 @@
+<!-- /terms.md -->
 ---
-layout: page
-title: "Terms and Conditions"
+layout: default
+title: Terms of Use
 permalink: /terms/
 ---
 
-_Last updated: 2025‑02‑15_
+# Terms of Use
 
-By accessing and using the Website you agree to these Terms.
-
-### 1. Use of the Website
-… _(content unchanged)_ …
+Content is provided *as-is*. No warranties are made. By using this site you accept full responsibility for any actions taken based on its content.

@@ -1,39 +1,11 @@
 ---
 layout: default
-title: "Page Not Found"
+title: "404 – Page Not Found"
 permalink: /404.html
 ---
 
-<div class="error-container">
-    <h1>❌ 404: Page Not Found</h1>
-    <p>This page does not exist or has been moved. You can navigate back to safety.</p>
-    <a href="/" class="return-home">Return Home</a>
-</div> 
-
-<style>
-    .error-container {
-        text-align: center;
-        padding: 50px;
-    }
-    h1 {
-        font-size: 2em;
-        color: #ff007f; /* Hot pink */
-        text-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
-    }
-    p {
-        font-size: 1.2em;
-        color: white;
-    }
-    .return-home {
-        display: inline-block;
-        padding: 10px 20px;
-        background: linear-gradient(to right, #00bfff, #ff007f);
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: 0.3s;
-    }
-    .return-home:hover {
-        background: linear-gradient(to right, #ff007f, #00bfff);
-    }
-</style>
+<div class="content-card">
+  <h1>404 – Page Not Found</h1>
+  <p>Oops! The page you’re looking for doesn’t exist.</p>
+  <p><a href="{{ '/' | relative_url }}">Return home</a></p>
+</div>
